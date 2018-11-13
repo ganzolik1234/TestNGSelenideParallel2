@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test1" parallel="tests" preserve-order="true" thread-count="2" >
+    <test name="test11" preserve-order="true" thread-count="1">
+        <classes>
+            <class name="FirstTestClass"/>
+            <class name="SecondTestClass"/>
+        </classes>
+    </test>
+    <test name="test12" preserve-order="true" thread-count="1">
+        <classes>
+            <class name="ThirdTestClass"/>
+            <class name="ForthTestClass"/>
+        </classes>
+    </test>
+</suite>

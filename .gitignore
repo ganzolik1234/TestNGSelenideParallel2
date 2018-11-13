@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+/build/
+/*.iml
+/target/
+/pom.xml
+/out/
+allure-results/
+/.gradle/
+/.idea
+
