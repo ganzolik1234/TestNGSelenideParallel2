@@ -11,7 +11,7 @@ repositories {
 
 
     dependencies {
-        compile 'org.testng:testng:6.11'
+        compile 'org.testng:testng:7.0.0-beta1'
         compile 'com.codeborne:selenide:5.0.1'
 
     }
