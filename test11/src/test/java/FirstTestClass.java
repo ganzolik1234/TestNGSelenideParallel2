@@ -12,21 +12,28 @@ public class FirstTestClass extends BaseTest {
     @BeforeClass
     public void beforeClass() {
         open("https://www.google.ru/");
+        System.out.println(String.format("BeforeClass FirstTetsClass My threadID is: %s\n",Thread.currentThread().getId()));
     }
 
 
     @Test
     public void test1() {
+        System.out.println(String.format("Test FirstTetsClass My threadID is: %s\n",Thread.currentThread().getId()));
+
         turnOnAssertionSoft();
         findInformation("Selenide");
         assertion(1,"Selenide");
+
     }
 
     @Test(enabled = false)
     public void test2() {
+        System.out.println(String.format("Test FirstTetsClass My threadID is: %s\n",Thread.currentThread().getId()));
+
         turnOnAssertionSoft();
         findInformation("Selenium");
         assertion(1,"Selenium");
+
     }
 
 
